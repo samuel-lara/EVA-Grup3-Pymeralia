@@ -1,4 +1,6 @@
     {
        "id": 0,
-       "Curso": "Ciberseguridad para Empresas" 
+       "curso": "Ciberseguridad para Empresas",
+       "img-bg": "imagen1.jpg",
+       "available": true
     }
