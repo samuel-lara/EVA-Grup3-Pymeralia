@@ -1,0 +1,18 @@
+body {
+background-color: #ffffff;
+font-family: 'Montserrat';
+font-size: 14px;
+}
+header {
+  background-color: orange;
+}
+#meh .p-3 {
+  height: 250px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+footer {
+  color: white;
+}
