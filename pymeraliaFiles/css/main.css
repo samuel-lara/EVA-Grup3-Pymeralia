@@ -1,5 +1,7 @@
 body {
 background-color: #ffffff;
+font-family: 'Montserrat';
+font-size: 14px;
 }
 header {
   background-color: orange;
@@ -10,4 +12,7 @@ header {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+footer {
+  color: white;
 }
