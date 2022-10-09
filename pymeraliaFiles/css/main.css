@@ -32,3 +32,12 @@ footer {
 i {
   margin-right: 5px;
 }
+#menu-user {
+  position: absolute; 
+  inset: 0px 0px auto auto; 
+  margin: 0px; 
+  transform: translate3d(0px, 34.4px, 0px);
+}
+#menu-dropdown i{
+  font-size: 30px;
+}
