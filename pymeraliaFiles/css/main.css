@@ -4,9 +4,12 @@ font-family: 'Montserrat';
 font-size: 14px;
 }
 header {
-  background-color: orange;
+  background-color: #eb9b00;
 }
-#meh .p-3 {
+.nav-item img {
+  height: 50px;
+}
+#cuerpo .p-3 {
   height: 250px;
   margin: auto;
   justify-content: center;
@@ -15,4 +18,17 @@ header {
 }
 footer {
   color: white;
+}
+#main-navbar {
+  background-color: #f4af2a;
+}
+#logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+.nav-link {
+  color: rgb(23, 23, 23);
+}
+i {
+  margin-right: 5px;
 }

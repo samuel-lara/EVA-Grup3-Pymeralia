@@ -9,6 +9,7 @@
   "author": "DAW2-grup3",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.0",
     "bootstrap": "^5.2.2",
     "jquery": "^3.6.1"
   }
