@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVA Pymeralia</title>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/emblemas.css">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-sm p-0" id="header-logo">
+            <div class="container-fluid d-flex justify-content-between navbar-nav">
+                <div class="p-2" id="logo">
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="/pymeraliaFiles/images/logo-orasus.png"
+                                alt="Logo" class="d-inline-block align-text-middle">
+                            ORASUS</a></li>
+                </div>
+
+                <!--Ruptura del responsive en 576px a 575px-->
+                <div class="p-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="menu-dropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                                <ul class="dropdown-menu" id="menu-user">
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-address-card"></i>Editar
+                                            Perfil</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language"></i>Idioma</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-palette"></i>Tema</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i
+                                                class="fa-solid fa-right-from-bracket"></i>Cerrar Sesión</a></li>
+                                </ul>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--Header Logo-->
+
+
+        <nav class="navbar navbar-expand-sm d-flex justify-content-between p-0" id="main-navbar">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i
+                                class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html"><i
+                                class="fa-solid fa-graduation-cap"></i>Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="emblemas.html"><i
+                                class="fa-solid fa-award"></i>Emblemas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calificaciones.html"><i
+                                class="fa-solid fa-star"></i>Calificaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Header Menu-->
+
+    </header>
+    <div class="container overflow-hidden text-center py-3" id="cuerpo">
+        <div>Emblemas</div>
+        <div><table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Emblemas ganados</th>
+                    <th scope="col">Medalla</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Curso 1</td>
+                    <td>img futura</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Curso 2</td>
+                    <td>img futura</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Curso 3</td>
+                    <td>img futura</td>
+                </tr>
+            </tbody>
+        </table></div>
+    </div>
+    <footer class="bg-black mt-auto">
+        <div class="text-center p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">
+                        <ul class="nav col-md-12 justify-content-end list-unstyled d-flex">
+                            <li class="ms-3"><i class="fa-solid fa-copyright"></i>Orasus | Copyright 2022</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <a class="text-light" href="#"><img src="/pymeraliaFiles/images/logo-orasus_white.png"
+                                alt="Logo" width="40px" class="d-inline-block justify-content-start "></a>
+                    </div>
+                    <div class="col-sm">
+                        <ul class="nav col-md-6 justify-content-end list-unstyled d-flex">
+                            <li class="ms-3"><a class="text-light" href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                            <li class="ms-3"><a class="text-light" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="ms-3"><a class="text-light" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="ms-3"><a class="text-light" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
