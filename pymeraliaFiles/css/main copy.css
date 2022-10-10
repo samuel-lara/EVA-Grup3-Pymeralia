@@ -48,3 +48,8 @@ i {
   margin: auto;
   vertical-align: middle;
 }
+
+#nombreCursosAdmin{
+  color: grey;
+  text-decoration: underline;
+}
