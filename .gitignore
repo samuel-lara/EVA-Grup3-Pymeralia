@@ -520,7 +520,6 @@ pymeraliaFiles/node_modules/bootstrap/dist/css/bootstrap-utilities.rtl.min.css
 pymeraliaFiles/node_modules/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map
 pymeraliaFiles/node_modules/bootstrap/dist/css/bootstrap.css
 pymeraliaFiles/node_modules/bootstrap/dist/css/bootstrap.css.map
-pymeraliaFiles/node_modules/bootstrap/dist/css/bootstrap.min.css
 pymeraliaFiles/node_modules/bootstrap/dist/css/bootstrap.min.css.map
 pymeraliaFiles/node_modules/bootstrap/dist/css/bootstrap.rtl.css
 pymeraliaFiles/node_modules/bootstrap/dist/css/bootstrap.rtl.css.map
@@ -528,7 +527,6 @@ pymeraliaFiles/node_modules/bootstrap/dist/css/bootstrap.rtl.min.css
 pymeraliaFiles/node_modules/bootstrap/dist/css/bootstrap.rtl.min.css.map
 pymeraliaFiles/node_modules/bootstrap/dist/js/bootstrap.bundle.js
 pymeraliaFiles/node_modules/bootstrap/dist/js/bootstrap.bundle.js.map
-pymeraliaFiles/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
 pymeraliaFiles/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map
 pymeraliaFiles/node_modules/bootstrap/dist/js/bootstrap.esm.js
 pymeraliaFiles/node_modules/bootstrap/dist/js/bootstrap.esm.js.map
@@ -1151,7 +1149,6 @@ node_modules/bootstrap/dist/css/bootstrap-utilities.rtl.min.css
 node_modules/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map
 node_modules/bootstrap/dist/css/bootstrap.css
 node_modules/bootstrap/dist/css/bootstrap.css.map
-node_modules/bootstrap/dist/css/bootstrap.min.css
 node_modules/bootstrap/dist/css/bootstrap.min.css.map
 node_modules/bootstrap/dist/css/bootstrap.rtl.css
 node_modules/bootstrap/dist/css/bootstrap.rtl.css.map
@@ -1159,7 +1156,6 @@ node_modules/bootstrap/dist/css/bootstrap.rtl.min.css
 node_modules/bootstrap/dist/css/bootstrap.rtl.min.css.map
 node_modules/bootstrap/dist/js/bootstrap.bundle.js
 node_modules/bootstrap/dist/js/bootstrap.bundle.js.map
-node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
 node_modules/bootstrap/dist/js/bootstrap.bundle.min.js.map
 node_modules/bootstrap/dist/js/bootstrap.esm.js
 node_modules/bootstrap/dist/js/bootstrap.esm.js.map
@@ -1342,13 +1338,10 @@ pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/LICENSE.txt
 pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/all.css
 pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/all.min.css
 pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/brands.css
-pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/brands.min.css
 pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css
-pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css
 pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/regular.css
 pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/regular.min.css
 pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/solid.css
-pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/solid.min.css
 pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/svg-with-js.css
 pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/svg-with-js.min.css
 pymeraliaFiles/node_modules/@fortawesome/fontawesome-free/css/v4-font-face.css
