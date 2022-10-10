@@ -1,43 +1,88 @@
 body {
-background-color: #ffffff;
-font-family: 'Montserrat';
-font-size: 14px;
+  background-color: #ffffff;
+  font-family: 'Montserrat';
+  font-size: 14px;
 }
+
 header {
   background-color: #eb9b00;
 }
+
 .nav-item img {
   height: 50px;
 }
+
 #cuerpo .p-3 {
   height: 250px;
   margin: auto;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: end;
   display: flex;
-}
-footer {
+  font-size: 30px;
+  font-weight: 800;
   color: white;
+  background-color: #400028;
 }
+#cuerpo a {
+  text-decoration: none;
+}
+
+
 #main-navbar {
   background-color: #f4af2a;
 }
+
 #logo {
   font-size: 20px;
   font-weight: 700;
 }
+
 .nav-link {
   color: rgb(23, 23, 23);
 }
+
 i {
   margin-right: 5px;
 }
+
 #menu-user {
-  position: absolute; 
-  inset: 0px 0px auto auto; 
-  margin: 0px; 
+  position: absolute;
+  inset: 0px 0px auto auto;
+  margin: 0px;
   transform: translate3d(0px, 34.4px, 0px);
 }
-#menu-dropdown i{
+
+#menu-dropdown i {
   font-size: 30px;
+}
+
+#bg-inicio {
+  background-image: url("../images/background/inicio.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 8px 24px 5px 24px
+}
+
+#bg-cursos {
+  background-image: url("../images/background/cursos.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bg-emblemas {
+  background-image: url("../images/background/trofeos.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bg-calificaciones {
+  background-image: url("../images/background/notas.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#borde-texto {
+  padding: 0px 15px;
+  border-radius: 15px;
+  background-color: #eb9b00;
 }
