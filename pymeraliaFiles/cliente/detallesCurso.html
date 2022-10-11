@@ -1,55 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main copy.css">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Temas</title>
-        <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/styles/estiloMenu.css">
-        <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    </head>
-    
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm" id="header-logo">
-            <div class="container-fluid d-flex justify-content-between navbar-nav">
-                <div class="p-2">
-                    <li class="nav-item"><a class="nav-link" href="#"><img
-                                src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
-                                class="d-inline-block align-text-top">ORASUS</a></li>
-                </div>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <nav class="navbar navbar-expand-sm p-0" id="header-logo">
+        <div class="container-fluid d-flex justify-content-between navbar-nav">
+            <div class="p-2" id="logo">
+                <li class="nav-item"><a class="nav-link" href="#"><img src="../images/logo-orasus.png"
+                            alt="Logo" class="d-inline-block align-text-middle">
+                        ORASUS</a></li>
+            </div>
 
-                <div class="p-2">
-                    <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-person-fill" viewBox="0 0 16 16">
-                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-                            </svg>
-                        </a>
-                    </li>
+            <!--Ruptura del responsive en 576px a 575px-->
+            <div class="p-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                        style="--bs-scroll-height: 100px;">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="menu-dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu" id="menu-user">
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-address-card"></i>Editar Perfil</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language"></i>Idioma</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-palette"></i>Tema</a></li>
+                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i>Cerrar Sesión</a></li>
+                            </ul>
+                        </li>
                 </div>
             </div>
-        </nav>
-        <!--Header Logo-->
+        </div>
+    </nav>
+    <!--Header Logo-->
 
+
+    <nav class="navbar navbar-expand-sm d-flex justify-content-between p-0" id="main-navbar">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i
+                            class="fa-solid fa-graduation-cap"></i>Cursos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-award"></i>Emblemas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-star"></i>Calificaciones</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Header Menu-->
+  </header>
 
         <nav class="navbar navbar-expand-sm bg-light d-flex justify-content-between">
             <div class="container-fluid">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                                <path fill-rule="evenodd"
-                                    d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-                            </svg></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Emblemas</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Calificaciones</a>
+                   
                     </li>
                 </ul>
             </div>
@@ -68,12 +90,12 @@
 
 
 
-        <video id="video" width="320" height="176">
-            <source src="Video/video.mp4">
+        <video id="video" width="1150" height="400">
+            <source src="../Video/video.mp4">
 
         </video>
 
-        <button onclick="playVid()" style="color:rgba(64,0,40.255);" type="button">Play</button>
+        <button  onclick="playVid()" style="color:rgba(64,0,40.255);" type="button">Play</button>
         <button onclick="pauseVid()" style="color:rgba(64,0,40.255);" type="button">Pause</button><br>
 
         <script>
@@ -103,75 +125,96 @@
         
 
 
-        <H3>Que es la ciberseguretat</H3>
-        <p>La ciberseguretat és la pràctica de protegir sistemes, xarxes i programes datacs digitals. 
-            En general, aquests ciberatacs apunten a accedir, modificar o destruir la informació confidencial; 
-            Extorsionar els usuaris o usuaris o interrompre la continuïtat del negoci.</p>
+        <H3>La ciberseguridad</H3>
+        <p>La seguridad informática, también conocida como ciberseguridad,1​ es el 
+            área relacionada con la informática y la telemática que se enfoca en la protección de la 
+            infraestructura computacional y todo lo vinculado con la misma, y especialmente la 
+            información contenida en una computadora o circulante a través de las redes de 
+            computadoras.2​ Para ello existen una serie de estándares, protocolos, métodos, reglas, 
+            herramientas, y leyes concebidas para minimizar los posibles riesgos a la infraestructura 
+            y/o a la propia información. La ciberseguridad comprende software (bases de datos, 
+            metadatos, archivos), hardware, redes de computadoras, y todo lo que la organización 
+            entienda y valore como un riesgo si la información confidencial involucrada pudiera 
+            llegar a manos de otras personas, por ejemplo, convirtiéndose así en información privilegiada.</p>
         
+        <H4>La importancia de la Ciberseguridad</H4>
+        <p>El crecimiento global de las redes y la información, impulsado por la innovación 
+            tecnológica, ha permitido a la sociedad crear prosperidad y mejorar la calidad de vida. 
+            Sin embargo, este rápido cambio ha generado también un desafío de largo plazo: gestionar 
+            los riesgos de seguridad a medida que el mundo depende cada vez más de la cibernética y las amenazas aumentan.</p>
+        <p>Los líderes empresariales internacionales calificaron las amenazas cibernéticas como uno de los principales riesgos 
+            de negocios de acuerdo con los resultados obtenidos en la 21a Encuesta Global de CEO de PwC.</p>
 
 
+         <!-- Boton para Descargar actividad-->
+            <a href="../actividades/file.doc" download="GFG">
+                <button type="button">Descargar actividad</button>
+            </a>
+   
 
+            <div class="ui segment">
+                <div class="field">
+                  <input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+                  <label for="#elegir">Elige el archivo a subir: </label>
+                  <input id="elegir" name="uploadedfile" type="file" /><br />
+                  <input type="submit" class="ui blue inline button" value="Subir archivo" />
+                 
+                </div>
+              </div>
+
+           
+            
+         
 </body>
 
 <footer class="bg-light text-center text-lg-center mt-auto">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         <div class="fluid-container">
-            <div class="row align-items-center">
-                <div class="col-3">
-                    <a class="nav-link" href="#"><img src="/pymeraliaFiles/images/logo-orasus.png" alt="Logo"
-                            width="20%" class="d-inline-block align-text-middle"> &nbsp Orasus by Pymeralia</a>
-                </div>
-                <div class="col-3 ">
-                    <h6>Acerca de Pymeralia</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#" class="nav-link">Política de privacidad</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Política de cookies</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Aviso legal</a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link">Ley de protección</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <h6>Contacto</h6>
-                    <p>Tel: 682849274 <br> Correo: support@pymeralia.com</p>
-                </div>
-                <div class="col-3 ">
-                    <h6>RRSS</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a class="nav-link" href="#"><img src="/pymeraliaFiles/images/instagram.png" alt="Logo"
-                                    width="10%" class="d-inline-block align-text-middle"><img
-                                    src="/pymeraliaFiles/images/facebook.png" alt="Logo" style="margin-left: 1%;"
-                                    width="10%" class="d-inline-block align-text-middle"></a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#"></a>
-                        </li>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#"><img src="/pymeraliaFiles/images/twitter.png" alt="Logo"
-                                    style="margin-top: 1%;" width="10%" class="d-inline-block align-text-middle"><img
-                                    src="/pymeraliaFiles/images/tiktok.png" alt="Logo"
-                                    style="margin-left: 1%; margin-top: 1%" width="10%"
-                                    class="d-inline-block align-text-middle"></a>
-                        </li>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#"></a>
-                        </li>
-                        </li>
-                    </ul>
-                </div>
+            <div class="row">
+              <div id="logo-footer" class="col-6 col-md-3">
+                <a class="nav-link" href="#"><img src="../images/logo-orasus.png" alt="Logo"  width="20%" class="d-inline-block align-text-middle"> &nbsp Orasus by Pymeralia</a>
+              </div>
+              <div class="col-6 col-md-3">
+                  <h6 id="title-footer">Acerca de Pymeralia</h6>
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#" class="nav-link">Política de privacidad</a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link">Política de cookies</a>
+                    </li> 
+                    <li>
+                      <a href="#" class="nav-link">Aviso legal</a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-link">Ley de protección</a>
+                    </li>
+                  </ul> 
+              </div>
+              <div class="col-6 col-md-3">
+                <h6 id="title-footer">Contacto</h6>
+                <p>Tel: 682849274 <br> Correo: support@pymeralia.com</p>
+              </div>
+              <div class="col-6 col-md-3">
+                <h6 id="title-footer">RRSS</h6>
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a class="nav-link" href="#"><img src="../images/instagram.png" alt="Logo"  width="10%" class="d-inline-block align-text-middle"><img src="../images/facebook.png" alt="Logo" style="margin-left: 1%;" width="10%" class="d-inline-block align-text-middle"></a></li>
+                  <li>
+                    <a class="nav-link" href="#"></a></li>
+                  </li> 
+                  <li>
+                    <a class="nav-link" href="#"><img src="../images/twitter.png" alt="Logo" style="margin-top: 1%;"  width="10%" class="d-inline-block align-text-middle"><img src="../images/tiktok.png" alt="Logo" style="margin-left: 1%; margin-top: 1%"  width="10%" class="d-inline-block align-text-middle"></a></li>
+                  </li>
+                  <li>
+                    <a class="nav-link" href="#"></a></li>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </div>
     </div>
-</footer>
+  </footer>
+</body>
 
 </html>

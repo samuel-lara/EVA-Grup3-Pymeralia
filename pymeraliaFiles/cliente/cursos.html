@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="/styles/estiloMenu.css" rel="stylesheet" />
-    <link href="/styles/estiloCursos.css" rel="stylesheet" />
-    <link href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet">
-    <link href="/node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet">
-    <link href="/node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="../../styles/estiloMenu.css" rel="stylesheet" />
+    <link href="../../styles/estiloCursos.css" rel="stylesheet" />
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet">
+    <link href="../../node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <link rel="stylesheet" href="/pymeraliaFiles/css/main.css">
-    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/pymeraliaFiles/scripts/cursos.js"></script>
+    <link rel="stylesheet" href="../css/main.css"><!--menu-->
+    <link rel="stylesheet" href="../css/main copy.css"><!--footer-->
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <title>Cursos Pymeralia</title>
   </head>
-
+  
   <body class="d-flex flex-column min-vh-100">
     <header>
       <nav class="navbar navbar-expand-sm p-0" id="header-logo">
           <div class="container-fluid d-flex justify-content-between navbar-nav">
               <div class="p-2" id="logo">
-                  <li class="nav-item"><a class="nav-link" href="#"><img src="/pymeraliaFiles/images/logo-orasus.png"
+                  <li class="nav-item"><a class="nav-link" href="#"><img src="../../pymeraliaFiles/images/logo-orasus.png"
                               alt="Logo" class="d-inline-block align-text-middle">
                           ORASUS</a></li>
               </div>
@@ -73,51 +73,57 @@
   </header>
 
     <main>
-        <!--<div>
-            <a href="#" style="background-image: url(/pymeraliaFiles/images/imagenes-curso/cyber-security-protection-firewall-interface-concept\ \(1\)\ \(1\).jpg); width: 2000px; height: 2000px;">Ciberseguridad para empresas</a>
-        </div>-->
+      <!--Eliminar este formulario despues de la presentacion del Sprint 1-->
+      <div class="formularioPrueba" style="margin-left: 30px;">
+        <p>Introducir una de las 3 opciones: curso_1, curso_2, curso_3</p>
+        <input type="text" id="formulari">
+        <button type="submit" class="btn btn-secondary btn-sm" onclick="activarCurso()" value="enviar">Activar</button>
+        <button type="submit" class="btn btn-secondary btn-sm" onclick="desactivarCurso()" value="enviar">Desactivar</button>
+      </div>
+        
         <div class="d-flex justify-content-evenly" id="contenedor-cursos">
 
-          <div class="card curso-no-comprado" style="width: 18rem;" id="curso-1">
-            <img src="/pymeraliaFiles/images/imagenes-curso/cyber-security-protection-firewall-interface-concept (1) (1).jpg" class="card-img-top" alt="...">
+          <div class="card curso-no-comprado" id="curso_1" style="width: 18rem;">
+            <img src="../../pymeraliaFiles/images/imagenes-curso/cyber-security-protection-firewall-interface-concept (1) (1).jpg" class="card-img-top" alt="imagen seguridad empresa">
             <div class="card-body">
               <h5 class="card-title">Ciberseguridad para empresas</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="/pymeraliaFiles/cliente/calificaciones.html"><button class="btn btn-primary">Ir al Curso</button></a>
+              <p class="card-text">Curso de ciberseguridad orientado a empresas que quieran reforzar o implementar seguridad.</p>
+              <a href="calificaciones.html"><button class="btn btn-primary">Ir al Curso</button></a>
             </div>
           </div><!--.curso-no-comprado-->
 
-          <div class="card curso-no-comprado" style="width: 18rem;" id="curso-2">
-            <img src="/pymeraliaFiles/images/imagenes-curso/cyber-security-protection-firewall-interface-concept (1) (1).jpg" class="card-img-top" alt="...">
+          <div class="card curso-no-comprado" style="width: 18rem;" id="curso_2">
+            <img src="../../pymeraliaFiles/images/imagenes-curso/ciberseguridad-para-pymes-y-autonomos.jpg" class="card-img-top" alt="imagen seguridad autónomos">
             <div class="card-body">
-              <h5 class="card-title">Ciberseguridad para empresas</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#"><button class="btn btn-primary">Ir al Curso</button></a>
+              <h5 class="card-title">Ciberseguridad para autónomos</h5>
+              <p class="card-text">Curso de ciberseguridad orientado a autónomos que quieran reforzar o implementar seguridad en su negocio.</p>
+              <a href="calificaciones.html"><button class="btn btn-primary">Ir al Curso</button></a>
             </div>
           </div><!--.curso-no-comprado-->
 
-          <div class="card curso-no-comprado" style="width: 18rem;" id="curso-3">
-            <img src="/pymeraliaFiles/images/imagenes-curso/cyber-security-protection-firewall-interface-concept (1) (1).jpg" class="card-img-top" alt="...">
+          <div class="card curso-no-comprado" style="width: 18rem;" id="curso_3">
+            <img src="../../pymeraliaFiles/images/imagenes-curso/contraseña.png" class="card-img-top" alt="imagen seguridad contraseñas">
             <div class="card-body">
-              <h5 class="card-title">Ciberseguridad para empresas</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#"><button class="btn btn-primary">Ir al Curso</button></a>
+              <h5 class="card-title">Política de contraseñas</h5>
+              <p class="card-text">Curso orientado a persona que quieran implementar una política de contraseñas seguras en su negocio/empresa.</p>
+              <a href="calificaciones.html"><button class="btn btn-primary">Ir al Curso</button></a>
             </div>
           </div><!--.curso-no-comprado-->
           
         </div>
     </main><!--Contenido-->
+    <script src="../scripts/cursos.js"></script><!--script funcionalidad página cursos-->
   </body>
 
   <footer class="bg-light text-center text-lg-center mt-auto">
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         <div class="fluid-container">
-            <div class="row align-items-center">
-              <div class="col-3">
-                <a class="nav-link" href="#"><img src="/pymeraliaFiles/images/logo-orasus.png" alt="Logo"  width="20%" class="d-inline-block align-text-middle"> &nbsp Orasus by Pymeralia</a>
+            <div class="row">
+              <div id="logo-footer" class="col-6 col-md-3">
+                <a class="nav-link" href="#"><img src="../images/logo-orasus.png" alt="Logo"  width="20%" class="d-inline-block align-text-middle"> &nbsp Orasus by Pymeralia</a>
               </div>
-              <div class="col-3 ">
-                  <h6>Acerca de Pymeralia</h6>
+              <div class="col-6 col-md-3">
+                  <h6 id="title-footer">Acerca de Pymeralia</h6>
                   <ul class="list-unstyled mb-0">
                     <li>
                       <a href="#" class="nav-link">Política de privacidad</a>
@@ -133,20 +139,20 @@
                     </li>
                   </ul> 
               </div>
-              <div class="col-3">
-                <h6>Contacto</h6>
+              <div class="col-6 col-md-3">
+                <h6 id="title-footer">Contacto</h6>
                 <p>Tel: 682849274 <br> Correo: support@pymeralia.com</p>
               </div>
-              <div class="col-3 ">
-                <h6>RRSS</h6>
+              <div class="col-6 col-md-3">
+                <h6 id="title-footer">RRSS</h6>
                 <ul class="list-unstyled mb-0">
                   <li>
-                    <a class="nav-link" href="#"><img src="/pymeraliaFiles/images/instagram.png" alt="Logo"  width="10%" class="d-inline-block align-text-middle"><img src="/pymeraliaFiles/images/facebook.png" alt="Logo" style="margin-left: 1%;" width="10%" class="d-inline-block align-text-middle"></a></li>
+                    <a class="nav-link" href="#"><img src="../images/instagram.png" alt="Logo"  width="10%" class="d-inline-block align-text-middle"><img src="../images/facebook.png" alt="Logo" style="margin-left: 1%;" width="10%" class="d-inline-block align-text-middle"></a></li>
                   <li>
                     <a class="nav-link" href="#"></a></li>
                   </li> 
                   <li>
-                    <a class="nav-link" href="#"><img src="/pymeraliaFiles/images/twitter.png" alt="Logo" style="margin-top: 1%;"  width="10%" class="d-inline-block align-text-middle"><img src="/pymeraliaFiles/images/tiktok.png" alt="Logo" style="margin-left: 1%; margin-top: 1%"  width="10%" class="d-inline-block align-text-middle"></a></li>
+                    <a class="nav-link" href="#"><img src="../images/twitter.png" alt="Logo" style="margin-top: 1%;"  width="10%" class="d-inline-block align-text-middle"><img src="../images/tiktok.png" alt="Logo" style="margin-left: 1%; margin-top: 1%"  width="10%" class="d-inline-block align-text-middle"></a></li>
                   </li>
                   <li>
                     <a class="nav-link" href="#"></a></li>
