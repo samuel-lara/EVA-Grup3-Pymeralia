@@ -37,3 +37,5 @@ services:
         - 'mariadb:db'
       ports:
         - 8081:80
+    nodejs:
+      image: node:latest
