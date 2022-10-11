@@ -42,3 +42,9 @@ i {
 footer {
   color: white;
 }
+#botones {
+  float: right;
+}
+#correcto {
+  display: none;
+}
