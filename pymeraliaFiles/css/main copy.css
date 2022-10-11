@@ -53,3 +53,16 @@ i {
   color: grey;
   text-decoration: underline;
 }
+
+input{
+  font-size:large;
+  margin-left: 1%;  
+}
+
+input::placeholder{
+  font-size:medium;
+}
+
+#row-buttons{
+  padding-bottom: 1%;
+}
