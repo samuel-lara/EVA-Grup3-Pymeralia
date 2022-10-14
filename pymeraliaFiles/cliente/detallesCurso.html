@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calificaciones</title>
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main copy.css">
-    <link href="../../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet">
-    <link href="../../node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet">
-    <link href="../../node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet">
+    <title>EVA Pymeralia</title>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/brands.min.css" rel="stylesheet">
+    <link href="../node_modules/@fortawesome/fontawesome-free/css/solid.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-
-
-    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../css/detallesCursos.css">
+    
 </head>
-<body class="d-flex flex-column min-vh-100">
-  <header>
-    <nav class="navbar navbar-expand-sm p-0" id="header-logo">
-        <div class="container-fluid d-flex justify-content-between navbar-nav">
-            <div class="p-2" id="logo">
-                <li class="nav-item"><a class="nav-link" href="#"><img src="../images/logo-orasus.png"
-                            alt="Logo" class="d-inline-block align-text-middle">
-                        ORASUS</a></li>
-            </div>
 
-            <!--Ruptura del responsive en 576px a 575px-->
-            <div class="p-2">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-                        style="--bs-scroll-height: 100px;">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="menu-dropdown" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="fa-solid fa-user"></i>
-                            </a>
-                            <ul class="dropdown-menu" id="menu-user">
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-address-card"></i>Editar Perfil</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language"></i>Idioma</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-palette"></i>Tema</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fa-solid fa-right-from-bracket"></i>Cerrar Sesión</a></li>
-                            </ul>
-                        </li>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-sm p-0" id="header-logo">
+            <div class="container-fluid d-flex justify-content-between navbar-nav">
+                <div class="p-2" id="logo">
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="../images/logo-orasus.png"
+                                alt="Logo" class="d-inline-block align-text-middle">
+                            Pymeshield</a></li>
+                </div>
+
+                <!--Ruptura del responsive en 576px a 575px-->
+                <div class="p-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                            style="--bs-scroll-height: 100px;">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="menu-dropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-user"></i>
+                                </a>
+                                <ul class="dropdown-menu" id="menu-user">
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-address-card"></i>Editar
+                                            Perfil</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-language"></i>Idioma</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i class="fa-solid fa-palette"></i>Tema</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"><i
+                                                class="fa-solid fa-right-from-bracket"></i>Cerrar Sesión</a></li>
+                                </ul>
+                            </li>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
-    <!--Header Logo-->
+        </nav>
+        <!--Header Logo-->
 
 
-    <nav class="navbar navbar-expand-sm d-flex justify-content-between p-0" id="main-navbar">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i
-                            class="fa-solid fa-graduation-cap"></i>Cursos</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-award"></i>Emblemas</a></li>
-                <li class="nav-item"><a class="nav-link" href="#"><i class="fa-solid fa-star"></i>Calificaciones</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!--Header Menu-->
-  </header>
+        <nav class="navbar navbar-expand-sm d-flex justify-content-between p-0" id="main-navbar">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html"><i
+                                class="fa-solid fa-graduation-cap"></i>Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="emblemas.html"><i class="fa-solid fa-award"></i>Emblemas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calificaciones.html"><i class="fa-solid fa-star"></i>Calificaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Header Menu-->
 
+    </header>
         <nav class="navbar navbar-expand-sm bg-light d-flex justify-content-between">
             <div class="container-fluid">
                 <ul class="navbar-nav">
@@ -77,14 +84,7 @@
             </div>
         </nav>
 
-        </script>
-        <style lang="css">
-            body {
-                margin: 3%;
-            }
-        </style>
-
-
+     
         <H1><b>Tema 1</b></H1>
 
 
@@ -94,35 +94,24 @@
             <source src="../Video/video.mp4">
 
         </video>
-
-        <button  onclick="playVid()" style="color:rgba(64,0,40.255);" type="button">Play</button>
-        <button onclick="pauseVid()" style="color:rgba(64,0,40.255);" type="button">Pause</button><br>
-
-        <script>
-            var vid = document.getElementById("video");
-
-            function playVid() {
-                video.play();
-            }
-
-            function pauseVid() {
-                video.pause();
-            } 
-        </script>
-
-        <script>
-            var vid = document.getElementById("video");
-
-            function playVid() {
-                video.play();
-            }
-
-            function pauseVid() {
-                video.pause();
-            } 
-        </script>
-
+       
+        <div id="outer">
+          <div class="inner"><button id="Button" onClick="playVid()" >Play</button></div>
+          <div class="inner"><button id="Button2" onClick="pauseVid()">Pause</button></div>
+        </div>
         
+       
+        <script>
+        
+
+            function playVid() {
+                video.play();
+            }
+
+            function pauseVid() {
+                video.pause();
+            } 
+        </script>     
 
 
         <H3>La ciberseguridad</H3>
@@ -148,22 +137,23 @@
 
          <!-- Boton para Descargar actividad-->
             <a href="../actividades/file.doc" download="GFG">
-                <button type="button">Descargar actividad</button>
+                <button  type="button">Descargar actividad</button>
             </a>
    
-
+            <form>
             <div class="ui segment">
                 <div class="field">
                   <input type="hidden" name="MAX_FILE_SIZE" value="100000" />
                   <label for="#elegir">Elige el archivo a subir: </label>
                   <input id="elegir" name="uploadedfile" type="file" /><br />
-                  <input type="submit" class="ui blue inline button" value="Subir archivo" />
+                
+                    <button onclick="alert('Enviado')">Enviar</button>
+                </form>
                  
                 </div>
               </div>
 
-           
-            
+              
          
 </body>
 
