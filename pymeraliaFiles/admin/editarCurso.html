@@ -70,24 +70,24 @@
         <h2>Editar curso</h2>
         <div class="row" id="row-buttons">
             <div class="col-md-12">
-                <button class="btn btn-secondary btn-lg">Guardar cambios</button>
+                <button class="btn btn-secondary btn-lg" onclick="validarInputObligatorio()">Guardar cambios</button>
                 <button class="btn btn-secondary btn-lg">Eliminar curso</button>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-md-12">
                 <h4>Nombre del curso</h4>
-                <input class="form-control" placeholder="Nombre actual: Ciberseguridad" type="text">  
+                <input class="form-control obligatorio" placeholder="Nombre actual: Ciberseguridad" type="text">  
             </div>
             <div class="col-12 col-md-12">
                 <h4>Enlaces (max. 4)</h4>
-                <input class="form-control" placeholder="Enlaces actuales" type="url">
+                <input class="form-control obligatorio" placeholder="Enlaces actuales" type="url">
                 <input class="form-control" placeholder="Enlaces actuales" type="url">
                 <input class="form-control" placeholder="Enlaces actuales" type="url">
                 <input class="form-control" placeholder="Enlaces actuales" type="url"> 
             </div>
             <div class="col-12 col-md-12">
-                <h4>Recursos<input class="form-control" placeholder="Nombre actual: Ciberseguridad" type="file"></h4> 
+                <h4>Recursos<input class="form-control" value="Hola" type="file"></h4> 
             </div>
         </div>
     </div>
@@ -96,46 +96,46 @@
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             <div class="fluid-container">
                 <div class="row">
-                <div id="logo-footer" class="col-6 col-md-3">
-                    <a class="nav-link" href="#"><img src="../images/logo-orasus.png" alt="Logo"  width="20%" class="d-inline-block align-text-middle"> &nbsp Orasus by Pymeralia</a>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h6 id="title-footer">Acerca de Pymeralia</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                        <a href="#" class="nav-link">Política de privacidad</a>
-                        </li>
-                        <li>
-                        <a href="#" class="nav-link">Política de cookies</a>
-                        </li> 
-                        <li>
-                        <a href="#" class="nav-link">Aviso legal</a>
-                        </li>
-                        <li>
-                        <a href="#" class="nav-link">Ley de protección</a>
-                        </li>
-                    </ul> 
-                </div>
-                <div class="col-6 col-md-3">
-                    <h6 id="title-footer">Contacto</h6>
-                    <p>Tel: 682849274 <br> Correo: support@pymeralia.com</p>
-                </div>
-                <div class="col-6 col-md-3">
-                    <h6 id="title-footer">RRSS</h6>
-                    <ul class="list-unstyled mb-0">
-                    <li>
-                        <a class="nav-link" href="#"><img src="../images/instagram.png" alt="Logo"  width="10%" class="d-inline-block align-text-middle"><img src="../images/facebook.png" alt="Logo" style="margin-left: 1%;" width="10%" class="d-inline-block align-text-middle"></a></li>
-                    <li>
-                        <a class="nav-link" href="#"></a></li>
-                    </li> 
-                    <li>
-                        <a class="nav-link" href="#"><img src="../images/twitter.png" alt="Logo" style="margin-top: 1%;"  width="10%" class="d-inline-block align-text-middle"><img src="../images/tiktok.png" alt="Logo" style="margin-left: 1%; margin-top: 1%"  width="10%" class="d-inline-block align-text-middle"></a></li>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#"></a></li>
-                    </li>
-                    </ul>
-                </div>
+                    <div id="logo-footer" class="col-6 col-md-3">
+                        <a class="nav-link" href="#"><img src="../images/logo-orasus.png" alt="Logo"  width="20%" class="d-inline-block align-text-middle"> &nbsp Orasus by Pymeralia</a>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h6 id="title-footer">Acerca de Pymeralia</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                            <a href="#" class="nav-link">Política de privacidad</a>
+                            </li>
+                            <li>
+                            <a href="#" class="nav-link">Política de cookies</a>
+                            </li> 
+                            <li>
+                            <a href="#" class="nav-link">Aviso legal</a>
+                            </li>
+                            <li>
+                            <a href="#" class="nav-link">Ley de protección</a>
+                            </li>
+                        </ul> 
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h6 id="title-footer">Contacto</h6>
+                        <p>Tel: 682849274 <br> Correo: support@pymeralia.com</p>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <h6 id="title-footer">RRSS</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a class="nav-link" href="#"><img src="../images/instagram.png" alt="Logo"  width="10%" class="d-inline-block align-text-middle"><img src="../images/facebook.png" alt="Logo" style="margin-left: 1%;" width="10%" class="d-inline-block align-text-middle"></a></li>
+                            <li>
+                                <a class="nav-link" href="#"></a></li>
+                            </li> 
+                            <li>
+                                <a class="nav-link" href="#"><img src="../images/twitter.png" alt="Logo" style="margin-top: 1%;"  width="10%" class="d-inline-block align-text-middle"><img src="../images/tiktok.png" alt="Logo" style="margin-left: 1%; margin-top: 1%"  width="10%" class="d-inline-block align-text-middle"></a></li>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#"></a></li>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
