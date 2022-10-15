@@ -16,25 +16,19 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <header>
-        <nav class="navbar navbar-expand-sm p-0" id="header-logo">
-            <div class="container-fluid d-flex justify-content-between navbar-nav">
+    <header class="sticky-top">
+        <div class="navbar navbar-expand-sm p-0" id="header-logo">
+            <div class="container-fluid d-flex flex-row justify-content-between navbar-nav ">
                 <div class="p-2" id="logo">
-                    <li class="nav-item"><a class="nav-link" href="#"><img src="../images/logo_pymeshield.png" alt="Logo"
-                                class="d-inline-block align-text-middle">
+                    <li class="nav-item"><a class="nav-link" href="#"><img src="../images/logo_pymeshield.png"
+                                alt="Logo" class="d-inline-block align-text-middle">
                             pymeshield</a></li>
                 </div>
 
                 <!--Ruptura del responsive en 576px a 575px-->
                 <div class="p-2">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarScroll">
-                        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
-                            style="--bs-scroll-height: 100px;">
+                    <div class="container" id="navbarScroll">
+                        <ul class="navbar-nav me-auto my-2" style="--bs-scroll-height: 100px;">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="menu-dropdown" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -54,30 +48,38 @@
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
         <!--Header Logo-->
 
 
-        <nav class="navbar navbar-expand-sm d-flex justify-content-between p-0" id="main-navbar">
+        <nav class="navbar navbar-expand-lg p-0" id="main-navbar">
             <div class="container-fluid">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i
-                                class="fa-solid fa-house"></i>Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cursos.html"><i
-                                class="fa-solid fa-graduation-cap"></i>Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="emblemas.html"><i
-                                class="fa-solid fa-award"></i>Emblemas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="calificaciones.html"><i
-                                class="fa-solid fa-star"></i>Calificaciones</a>
-                    </li>
-                </ul>
-            </div>
+                <span class="p-2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button></span>
+                <div class="collapse navbar-collapse p-0" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i
+                                    class="fa-solid fa-house"></i>Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cursos.html"><i
+                                    class="fa-solid fa-graduation-cap"></i>Cursos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="emblemas.html"><i
+                                    class="fa-solid fa-award"></i>Emblemas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="calificaciones.html"><i
+                                    class="fa-solid fa-star"></i>Calificaciones</a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
         <!--Header Menu-->
 
     </header>
     <div class="container overflow-hidden text-center py-3" id="cuerpo">
-        <div><h2>Emblemas</h2></div>
+        <div>
+            <h2>Emblemas</h2>
+        </div>
         <div>
             <table class="table table-striped align-middle">
                 <thead>

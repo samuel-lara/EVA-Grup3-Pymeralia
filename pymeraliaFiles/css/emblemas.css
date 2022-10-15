@@ -39,6 +39,7 @@ i {
 #menu-dropdown i {
   font-size: 30px;
 }
+
 footer {
   color: white;
 }
@@ -54,6 +55,17 @@ a:hover {
 #footer-rrss {
   font-size: 24px;
 }
-#title-footer{
+
+#title-footer {
   font-weight: bolder;
+}
+
+@media (max-width: 575.98px) {
+  .nav-item img {
+    height: 32px;
+  }
+
+  #menu-dropdown i {
+    font-size: 18px;
+  }
 }
