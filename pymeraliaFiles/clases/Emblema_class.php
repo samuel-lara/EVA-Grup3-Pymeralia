@@ -17,7 +17,7 @@ class Emblema {
    */
   public function __construct($idEmblema, $nombreEmblema, $descripcionEmblema, $imagenEmblema){
     $this->idEmblema = $idEmblema;
-    $this->nombreEmlema = $nombreEmlema;
+    $this->nombreEmlema = $nombreEmblema;
     $this->descripcionEmblema = $descripcionEmblema;
     $this->imagenEmblema = $imagenEmblema;
   }
