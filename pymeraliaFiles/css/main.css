@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: #eb9b00;
+  background-color: #FF6720;
 }
 
 .nav-item img {
@@ -21,15 +21,16 @@ header {
   font-size: 30px;
   font-weight: 800;
   color: white;
-  background-color: #400028;
+  background-color: #dcdcdc;
 }
+
 #cuerpo a {
   text-decoration: none;
 }
 
 
 #main-navbar {
-  background-color: #f4af2a;
+  background-color: #ff9950;
 }
 
 #logo {
@@ -84,8 +85,35 @@ i {
 #borde-texto {
   padding: 0px 15px;
   border-radius: 15px;
-  background-color: #eb9b00;
+  background-color: #FF6720;
 }
+
 footer {
   color: white;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c43400 !important;
+}
+
+#footer-rrss {
+  font-size: 24px;
+}
+
+#title-footer {
+  font-weight: bolder;
+}
+
+@media (max-width: 575.98px) {
+  .nav-item img {
+    height: 32px;
+  }
+
+  #menu-dropdown i {
+    font-size: 18px;
+  }
 }
