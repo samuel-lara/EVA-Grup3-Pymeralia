@@ -32,6 +32,7 @@ class Curs
     {
         return $this->idCurso;
     }
+    
     /**
      * getNombreCurso
      *
@@ -41,6 +42,7 @@ class Curs
     {
         return $this->nombreCurso;
     }
+
     /**
      * getDescripcionCurso
      *
@@ -50,6 +52,7 @@ class Curs
     {
         return $this->descripcionCurso;
     }
+
     /**
      * getImagenCurso
      *
@@ -59,6 +62,7 @@ class Curs
     {
         return $this->imagenCurso;
     }
+
     /**
      * setIdCurso
      *
@@ -69,6 +73,7 @@ class Curs
     {
         $this->idCurso = $idCurso;
     }
+
     /**
      * setNombreCurso
      *
@@ -79,6 +84,7 @@ class Curs
     {
         $this->nombreCurso = $nombreCurso;
     }
+
     /**
      * setDescripcionCurso
      *
@@ -89,6 +95,7 @@ class Curs
     {
         $this->descripcionCurso = $descripcionCurso;
     }
+
     /**
      * setImagenCurso
      *
