@@ -1,5 +1,5 @@
 <?php 
-class Emblemas {
+class Emblema {
   private $idEmblema;
   private $nombreEmblema;
   private $descripcionEmblema;
